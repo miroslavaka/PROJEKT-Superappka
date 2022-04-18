@@ -41,8 +41,27 @@ body {
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
 .menu li {
-  display: inline;
+  display: inline-block;
+  padding: 0 20px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #000;
+}
+.menu li:first-child {
+  font-weight: 600;
+}
+.menu li:nth-child(3) {
+  background-color: #48418e;
+  padding: 20px;
+}
+.menu li:nth-child(3) a {
+  color: white;
 }
 .hero {
   background-image: url(images/pozadi.jpg);
@@ -53,6 +72,9 @@ body {
   display: flex;
   justify-content: space-between;
   color: white;
+}
+.hero img {
+  padding-top: 50px;
 }
 .hero .text {
   margin-left: 30px;
@@ -73,14 +95,23 @@ body {
   border: 1px solid white;
   border-radius: 5px;
   color: white;
-  padding: 5px 15px;
+  padding: 10px 15px;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.hero a:first-of-type {
+  background-color: #48418e;
+  margin-right: 10px;
 }
 .stlpce {
   display: flex;
-  justify-content: center;
+  padding: 30px 50px;
 }
 .stlpce .stlpec {
   width: calc(100% / 3);
+  text-align: center;
+}
+.stlpec:not(last-child) {
+  margin-right: 20px;
 }
 .stlpec img {
   width: 80px;
@@ -88,4 +119,5 @@ body {
 .page-footer {
   background-color: #48418e;
   color: white;
+  text-align: center;
 }
